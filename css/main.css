@@ -1633,6 +1633,9 @@ pre.wp-block-verse {
   display: block;
 }
 
+.teks-justify {
+  text-align: justify;
+}
 
 .profile-card h3.site-title {
   display: block;
