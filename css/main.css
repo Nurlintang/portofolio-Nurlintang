@@ -817,6 +817,10 @@ pre.wp-block-verse {
   padding-top: 10px;
 }
 
+.p-15 {
+  padding-top: 15px;
+}
+
 .p-20 {
   padding-top: 20px;
 }
@@ -1622,6 +1626,24 @@ pre.wp-block-verse {
   border-radius: 150px;
   margin: 0 auto;
 } */
+
+.soft-round-photo {
+  width: 130px;       /* Atur ukuran sesuai kebutuhan */
+  height: 140px;
+  object-fit: cover;
+  border-radius: 12px; /* Ujung membulat sedikit, bukan lingkaran penuh */
+  border: 2px solid #ccc; /* Optional: border tipis */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: bayangan halus */
+}
+
+.soft-round-photo-irmapa{
+  width: 130px;       /* Atur ukuran sesuai kebutuhan */
+  height: 165px;
+  object-fit: cover;
+  border-radius: 12px; /* Ujung membulat sedikit, bukan lingkaran penuh */
+  border: 2px solid #ccc; /* Optional: border tipis */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: bayangan halus */
+}
 
 .profile-img img {
   height: auto;
@@ -5579,11 +5601,12 @@ a.post-thumbnail:hover {
 }
 
 .testimonial-author-info {
-  margin-top: 18px;
+  margin-top: -1px;
 }
 
 .testimonial-author {
   margin: 0 0 2px;
+  font-size: 21px;
 }
 
 .testimonial-firm {
