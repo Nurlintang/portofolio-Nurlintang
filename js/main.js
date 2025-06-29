@@ -449,9 +449,7 @@
 
         //Google Maps
         if ($(".lmpixels-map")[0]){
-            var address = 'San Francisco, S601 Townsend Street, California, USA', //Replace with Your Address
-                address = encodeURIComponent(address),
-                src = 'https://maps.google.com/maps?q=' + address + '&amp;t=m&amp;z=16&amp;output=embed&amp;iwloc=near&output=embed';
+            var src = 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15805.347649851514!2d112.61010336738282!3d-7.964091225325131!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd629d282b371fb%3A0x851b513c014bc4dc!2sWIJAYA%20photocopy%20%26%20digital%20print!5e0!3m2!1sen!2sus!4v1751170581281!5m2!1sen!2sus';
             $(".lmpixels-map iframe").attr("src", src);
         }
 
