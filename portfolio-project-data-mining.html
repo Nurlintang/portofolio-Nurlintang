@@ -16,11 +16,6 @@
 
         <div class="row">
             <div class="col-sm-8 col-md-8 portfolio-block">
-                <div class="owl-carousel portfolio-page-carousel">
-                    <div class="item">
-                        <img src="img/portfolio/full/1-datmin.png" alt="" />
-                    </div>
-                </div>
 
                 <div>
                      <p class="deskripsi-tambahan">
@@ -38,8 +33,32 @@
                     </div>
 
                     <p class="deskripsi-tambahan">
-                        Setelah menghapus data dari kota-kota yang berada di luar provinsi Washington, peneliti akan melanjutkan dengan melakukan <b>analisis korelasi.</b> Analisis ini bertujuan untuk <b>mengidentifikasi</b> atribut atau faktor yang paling <b>berpengaruh terhadap harga rumah.</b>
+                        Setelah menghapus data dari kota-kota yang berada di luar provinsi Washington, peneliti akan melanjutkan dengan melakukan <b>analisis korelasi.</b> Analisis ini bertujuan untuk <b>mengidentifikasi</b> atribut atau faktor yang paling <b>berpengaruh terhadap harga rumah.</b> Hasil analisis korelasi disini bisa dilihat bahwa untuk atribut <b><i>bedrooms, sqft_living, floors, waterfront, view, dan sqft_basement</i></b> setidaknya memiliki hubungan berbanding lurus dengan harga rumah. maka dari itu peneliti dapat menggunakan atribut ini untuk membuat model regresi.
                     </p>
+
+                    <div class="owl-carousel portfolio-page-carousel">
+                        <div class="item">
+                            <img src="img/portfolio/full/2-datmin.png" alt="" />
+                        </div>
+                         <div class="item">
+                            <img src="img/portfolio/full/3-datmin.png" alt="" />
+                        </div>
+                    </div>
+
+                    <p class="deskripsi-tambahan">
+                        Setelah data diolah, dapat dilihat bahwa nilai <b><i>root mean squared error</i> (RMSE)</b> mencapai sekitar 230.000. Artinya, <b>rata-rata kesalahan prediksi harga rumah oleh model regresi adalah sekitar 230.000 dollar.</b> Nilai ini tentu masih tergolong kurang baik, mengingat selisih tersebut cukup besar dibandingkan harga properti yang sebenarnya. Biasanya, hal ini disebabkan oleh beberapa faktor, antara lain:
+
+                        <ul> <li>Model regresi yang digunakan masih terlalu sederhana atau linier</li>  <li>Adanya <i>outlier</i> atau data ekstrem yang memengaruhi perhitungan error secara signifikan.</li> <li>Distribusi data yang tidak seimbang atau tidak terdistribusi normal, sehingga memengaruhi performa model.</li> 
+                        <li>Multikolinearitas antar variabel independen yang dapat memengaruhi kestabilan koefisien model.</li> </ul>
+
+                        Oleh karena itu, perlu dilakukan evaluasi lebih lanjut terhadap model, baik dengan menambahkan variabel yang lebih relevan, membersihkan data dari outlier, ataupun mencoba pendekatan model lain yang lebih kompleks, berikut merupakan model regresi dari harga rumah di Amerika Serikat.
+                    </p>
+
+                    <div class="owl-carousel portfolio-page-carousel">
+                        <div class="item">
+                            <img src="img/portfolio/full/4-datmin.png" alt="" />
+                        </div>
+                    </div>
                 </div>
 
                 <script type="text/javascript">
