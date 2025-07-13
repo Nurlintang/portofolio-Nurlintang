@@ -19,46 +19,118 @@
 
                 <div>
                      <p class="deskripsi-tambahan">
-                        Proyek ini diawali oleh peneliti dengan tahap <b><i>Business Understanding</i></b>, yaitu memahami permasalahan dan menentukan tujuan utama berupa estimasi atau perkiraan harga rumah di Amerika Serikat. Namun, pada tahap awal ini tujuan tersebut masih bersifat umum dan belum terperinci. Oleh karena itu, peneliti akan melakukan <b>eksplorasi data</b> terlebih dahulu untuk memahami karakteristik dataset yang tersedia. Hasil eksplorasi tersebut akan menjadi dasar dalam melakukan penyesuaian data dan merumuskan strategi yang tepat untuk membangun model prediksi harga rumah di Amerika Serikat.
+                        Proyek ini diawali oleh peneliti dengan tahap <b><i>Business Understanding</i></b>, yaitu memahami permasalahan dan menentukan tujuan utama berupa estimasi atau <b>perkiraan harga rumah di Amerika Serikat.</b> Namun, pada tahap awal ini tujuan tersebut masih bersifat umum dan belum terperinci. Oleh karena itu, peneliti akan melakukan <b>eksplorasi data</b> terlebih dahulu untuk memahami karakteristik dataset yang tersedia. Hasil eksplorasi tersebut akan menjadi dasar dalam melakukan penyesuaian data dan merumuskan strategi yang tepat untuk <b>membangun model prediksi harga rumah di Amerika Serikat.</b>
                     </p>
 
                     <p class="deskripsi-tambahan">
-                        Setelah melakukan eksplorasi data, peneliti menemukan bahwa mayoritas data harga rumah berasal dari provinsi atau <i>state</i> <b>Washington.</b> Sementara itu, terdapat beberapa kota yang berada di luar wilayah provinsi Washington, yaitu Auburn, Des Moines, Covington, Newcastle, Medina, Preston, dan Milton. Oleh karena itu, peneliti memutuskan untuk melakukan eliminasi terhadap data dari kota-kota di luar provinsi Washington dengan tujuan agar <b>model yang dibangun menjadi lebih akurat, spesifik, dan terfokus hanya untuk wilayah provinsi Washington.</b>
+                        Setelah melakukan eksplorasi data, peneliti menemukan bahwa mayoritas data harga rumah berasal dari provinsi atau <i>state</i> <b>Washington.</b> Sementara itu, terdapat beberapa kota yang berada di luar wilayah provinsi Washington, yaitu Auburn, Des Moines, Covington, Newcastle, Medina, Preston, dan Milton. Oleh karena itu, peneliti memutuskan untuk melakukan eliminasi terhadap data dari kota-kota di luar provinsi Washington dengan tujuan agar <b>model yang dibangun menjadi lebih akurat, spesifik, dan terfokus hanya untuk wilayah provinsi Washington.</b> Setelah melakukan eliminasi berdasarkan provinsi, peneliti menemukan data yang tidak biasa <b>(<i>Outliers</i>)</b> (slide 1), yaitu terdapat <b>harga yang sangat tinggi</b>, sehingga peneliti melakukan <b>eliminasi 5 data</b> dari harga yang sangat tinggi tersebut. pada slide 3 dapat dilihat bahwa data tidak ada perubahan yang sangat signifikan yang menindikasi setidak data sudah mendekati distribusi normal.
                     </p>
 
                     <div class="owl-carousel portfolio-page-carousel">
                         <div class="item">
                             <img src="img/portfolio/full/1-datmin.png" alt="" />
                         </div>
-                    </div>
-
-                    <p class="deskripsi-tambahan">
-                        Setelah menghapus data dari kota-kota yang berada di luar provinsi Washington, peneliti akan melanjutkan dengan melakukan <b>analisis korelasi.</b> Analisis ini bertujuan untuk <b>mengidentifikasi</b> atribut atau faktor yang paling <b>berpengaruh terhadap harga rumah.</b> Hasil analisis korelasi disini bisa dilihat bahwa untuk atribut <b><i>bedrooms, sqft_living, floors, waterfront, view, dan sqft_basement</i></b> setidaknya memiliki hubungan berbanding lurus dengan harga rumah. maka dari itu peneliti dapat menggunakan atribut ini untuk membuat model regresi.
-                    </p>
-
-                    <div class="owl-carousel portfolio-page-carousel">
                         <div class="item">
                             <img src="img/portfolio/full/2-datmin.png" alt="" />
                         </div>
-                         <div class="item">
-                            <img src="img/portfolio/full/3-datmin.png" alt="" />
+                        <div class="item">
+                            <img src="img/portfolio/full/6-datmin.png" alt="" />
                         </div>
                     </div>
 
                     <p class="deskripsi-tambahan">
-                        Setelah data diolah, dapat dilihat bahwa nilai <b><i>root mean squared error</i> (RMSE)</b> mencapai sekitar 230.000. Artinya, <b>rata-rata kesalahan prediksi harga rumah oleh model regresi adalah sekitar 230.000 dollar.</b> Nilai ini tentu masih tergolong kurang baik, mengingat selisih tersebut cukup besar dibandingkan harga properti yang sebenarnya. Biasanya, hal ini disebabkan oleh beberapa faktor, antara lain:
-
-                        <ul> <li>Model regresi yang digunakan masih terlalu sederhana atau linier</li>  <li>Adanya <i>outlier</i> atau data ekstrem yang memengaruhi perhitungan error secara signifikan.</li> <li>Distribusi data yang tidak seimbang atau tidak terdistribusi normal, sehingga memengaruhi performa model.</li> 
-                        <li>Multikolinearitas antar variabel independen yang dapat memengaruhi kestabilan koefisien model.</li> </ul>
-
-                        Oleh karena itu, perlu dilakukan evaluasi lebih lanjut terhadap model, baik dengan menambahkan variabel yang lebih relevan, membersihkan data dari outlier, ataupun mencoba pendekatan model lain yang lebih kompleks, berikut merupakan model regresi dari harga rumah di Amerika Serikat.
+                        Setelah menghapus data <b><i>outliers</i></b> dan kota-kota yang berada di luar provinsi Washington, peneliti akan melanjutkan dengan melakukan <b>analisis korelasi</b> (slide 1). Analisis ini bertujuan untuk <b>mengidentifikasi</b> atribut atau faktor yang paling <b>berpengaruh terhadap harga rumah.</b> Hasil analisis korelasi disini bisa dilihat bahwa untuk atribut <b><i>bedrooms, sqft_living, view, sqft_above, dan sqft_basement</i></b> setidaknya memiliki hubungan berbanding lurus dengan harga rumah. maka dari itu peneliti dapat menggunakan atribut ini untuk membuat model regresi (slide 2 - 3).
                     </p>
 
                     <div class="owl-carousel portfolio-page-carousel">
                         <div class="item">
+                            <img src="img/portfolio/full/3-datmin.png" alt="" />
+                        </div>
+                        <div class="item">
                             <img src="img/portfolio/full/4-datmin.png" alt="" />
                         </div>
+                        <div class="item">
+                            <img src="img/portfolio/full/5-datmin.png" alt="" />
+                        </div>
                     </div>
+
+                    <p class="deskripsi-tambahan">
+                        Setelah data diolah, dapat dilihat bahwa nilai <b><i>root mean squared error</i> (RMSE)</b> mencapai sekitar 226.701 Artinya, <b>rata-rata kesalahan prediksi harga rumah oleh model regresi adalah sekitar 226.701 dollar.</b> Nilai ini tentu masih tergolong kurang baik, mengingat selisih tersebut cukup besar dibandingkan harga properti yang sebenarnya. Maka dari itu, <b>eksplorasi data dilanjutkan dengan cara Clustering</b> Untuk menentukan ke kelompok mana sebuah rumah paling cenderung tergolong.
+                    </p>
+
+                    <div class="owl-carousel portfolio-page-carousel">
+                        <div class="item">
+                            <img src="img/portfolio/full/7-datmin.png" alt="" />
+                        </div>
+                        <div class="item">
+                            <img src="img/portfolio/full/8-datmin.png" alt="" />
+                        </div>
+                        <div class="item">
+                            <img src="img/portfolio/full/9-datmin.png" alt="" />
+                        </div>
+                    </div>
+
+                    <p class="deskripsi-tambahan">
+                        Dapat dilihat bahwa Cluster 2 dan Cluster 3 menunjukkan perbedaan yang cukup jelas, sedangkan <b>Cluster 4 kurang mampu memberikan penjelasan yang signifikan.</b> Oleh karena itu, analisis <b>difokuskan pada Cluster 2 dan Cluster 3 sebagai kandidat utama.</b> Untuk menentukan cluster yang paling representatif, peneliti melakukan analisis visual data. slide 1 - 2 untuk cluster 2 dan slide 3 - 4 untuk cluster 3.
+                    </p>
+
+                    <div class="owl-carousel portfolio-page-carousel">
+                        <div class="item">
+                            <img src="img/portfolio/full/10-datmin.png" alt="" />
+                        </div>
+                        <div class="item">
+                            <img src="img/portfolio/full/11-datmin.png" alt="" />
+                        </div>
+                        <div class="item">
+                            <img src="img/portfolio/full/12-datmin.png" alt="" />
+                        </div>
+                        <div class="item">
+                            <img src="img/portfolio/full/13-datmin.png" alt="" />
+                        </div>
+                    </div>
+
+                    <p class="deskripsi-tambahan">
+                        Dari kedua hasil analisis diskriminan, <b>terlihat bahwa model 2 cluster memberikan kinerja klasifikasi yang sedikit lebih optimal</b> dengan akurasi keseluruhan sebesar <b>99.1%</b>, melampaui model 3 cluster yang mencapai akurasi 97.7%. Slide 3 menyajikan model klasifikasi untuk Cluster 2 yang digunakan sebagai panduan dalam mengklasifikasikan data baru. Data baru dimasukkan ke dalam persamaan, lalu dibandingkan hasilnya — nilai tertinggi menunjukkan cluster yang dipilih.
+                    </p>
+
+                    <div class="owl-carousel portfolio-page-carousel">
+                        <div class="item">
+                            <img src="img/portfolio/full/14-datmin.png" alt="" />
+                        </div>
+                        <div class="item">
+                            <img src="img/portfolio/full/15-datmin.png" alt="" />
+                        </div>
+                        <div class="item">
+                            <img src="img/portfolio/full/16-datmin.png" alt="" />
+                        </div>
+                    </div>
+
+                    <p class="deskripsi-tambahan">
+                        Setelah melakukan <i>clustering</i>, <b>peneliti tetap perlu membangun model yang dapat memprediksi harga rumah di Amerika Serikat</b>, khususnya di negara bagian Washington. Oleh karena itu, peneliti membuat model regresi terpisah untuk masing-masing cluster. Slide 1 merupakan tipologi hasil clustering. Slide 2 dan 3 menyajikan hasil model regresi untuk memprediksi harga rumah pada Cluster 0, sedangkan Slide 4 dan 5 menampilkan hasil model regresi untuk Cluster 1.
+                    </p>
+
+                    <div class="owl-carousel portfolio-page-carousel">
+                        <div class="item">
+                            <img src="img/portfolio/full/17-datmin.png" alt="" />
+                        </div>
+                        <div class="item">
+                            <img src="img/portfolio/full/18-datmin.png" alt="" />
+                        </div>
+                        <div class="item">
+                            <img src="img/portfolio/full/19-datmin.png" alt="" />
+                        </div>
+                        <div class="item">
+                            <img src="img/portfolio/full/20-datmin.png" alt="" />
+                        </div>
+                        <div class="item">
+                            <img src="img/portfolio/full/21-datmin.png" alt="" />
+                        </div>
+                    </div>
+
+                    <p class="deskripsi-tambahan">
+                        Jika melihat dari hasil topologi, nilai <b><i>root mean squared error</i> (RMSE)</b> mencapai sekitar 137308,182 dan 344015,951 tergolong masih baik, karena untuk cluster 0 range nya adalah dari 8000 hingga 800000, dan untuk cluster 1 rangenya dari 802000 hingga 3100000. dapat disimpulkan bahwa <b>model ini sudah baik dalam memperkirakan harga rumah di Amerika Serikat.</b>
+                    </p>
+
                 </div>
 
                 <script type="text/javascript">
@@ -102,6 +174,7 @@
                         <ul class="tags">
                             <li><a>Excel</a></li>
                             <li><a>RapidMiner</a></li>
+                            <li><a>IBM SPSS</a></li>
                         </ul>
                     </div>
                     <!-- /Technology -->
